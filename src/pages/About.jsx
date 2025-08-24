@@ -14,7 +14,7 @@ function About() {
   ];
 
   return (
-    <div className="mt-5 w-full max-w-[570px] min-h-screen">
+    <div className="w-full max-w-[570px] min-h-screen lg:mt-10 mt-25">
       <h1 className="text-3xl font-semibold mb-4">Asadbek kim?</h1>
 
       <p className="mb-2">
@@ -25,19 +25,17 @@ function About() {
 
       <p className="mb-2">Sohamga doir mahoratlarim:</p>
       <div className="flex flex-wrap gap-10 mb-4">
-        <ul className="list-disc pl-5 font-semibold">
+        <ul className="list-disc pl-5 font-semibold grid grid-cols-2">
           <li>Ingliz tili</li>
           <li>Matematika</li>
           <li>Kreativlik</li>
-          <li>Komunikator</li>
-        </ul>
-        <ul className="list-disc pl-5 font-semibold">
+          <li>Super komunikator</li>
           <li>Fast Typing</li>
           <li>Sifatli UI/UX</li>
         </ul>
       </div>
 
-      <p className="mb-2">
+      <p>
         Tajribam davomida ushbu texnologiyalarni o'rgandim va loyihalarda
         qo'lladim!
       </p>

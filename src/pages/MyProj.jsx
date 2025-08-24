@@ -17,7 +17,7 @@ const projects = [
 
 export default function MyProj() {
   return (
-    <div className="min-h-screen bg-white flex justify-center p-4 sm:p-6 md:p-10">
+    <div className="min-h-screen bg-white flex justify-center mt-25 lg:mt-5 p-4 sm:p-6 md:p-10">
       <div className="w-full max-w-2xl space-y-10">
         {projects.map((item, idx) => (
           <div

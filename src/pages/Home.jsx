@@ -6,45 +6,55 @@ import { RiTelegram2Fill, RiTwitterXFill } from "react-icons/ri";
 
 function Home() {
   return (
-    <div className="flex justify-between my-28 items-center">
-      <div className="flex flex-col gap-5 items-start ">
+    <div
+      className="
+        flex flex-col lg:flex-row justify-between 
+        my-10 lg:my-28 items-center 
+        px-4 lg:px-10 gap-10 lg:gap-20 mt-30
+        text-center lg:text-left
+      "
+    >
+      {/* Left panel */}
+      <div className="flex flex-col gap-5 items-center lg:items-start w-full lg:w-1/2">
         {/* Header section */}
-        <div className="flex items-center gap-4">
-          <div className="border w-30 h-30 flex items-center justify-center rounded-full">
-            <img src="/logo.svg" width={50} alt="header_photo" />
+        <div className="flex flex-col items-center gap-4 w-full lg:flex-row lg:items-center">
+          <div className="border w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center rounded-full">
+            <img src="/logo.svg" className="w-12 sm:w-14" alt="header_photo" />
           </div>
-          <div className="flex flex-col gap-0.5">
-            <h1 className="text-3xl text-gray-700">
+          <div className="flex flex-col gap-0.5 items-center lg:items-start">
+            <h1 className="text-2xl sm:text-3xl text-gray-700">
               <span className="font-semibold text-black">Asadbek</span>{" "}
               Tursunaliyev
             </h1>
-            <h3 className="text-[21px] text-[#64748B]">Frontend dasturchi</h3>
-            <div className="flex gap-2 items-center text-white *:bg-[#0F172A] *:p-1 *:rounded *:text-[14px]">
+            <h3 className="text-[18px] sm:text-[21px] text-[#64748B]">
+              Frontend dasturchi
+            </h3>
+            <div className="flex flex-wrap gap-2 items-center mt-2 text-white text-[14px] justify-center lg:justify-start">
               <Link to="https://t.me/tursunaliyev_hd" target="_blank">
-                <RiTelegram2Fill />
+                <RiTelegram2Fill className="bg-[#0F172A] p-1 rounded" />
               </Link>
               <Link
                 to="https://www.linkedin.com/mypreferences/d/categories/account"
                 target="_blank"
               >
-                <FaLinkedinIn />
+                <FaLinkedinIn className="bg-[#0F172A] p-1 rounded" />
               </Link>
               <Link to="https://x.com" target="_blank">
-                <RiTwitterXFill />
+                <RiTwitterXFill className="bg-[#0F172A] p-1 rounded" />
               </Link>
               <Link to="https://github.com/bek-tursunaliyev" target="_blank">
-                <FaGithub />
+                <FaGithub className="bg-[#0F172A] p-1 rounded" />
               </Link>
               <Link to="https://gmail.com/" target="_blank">
-                <MdEmail />
+                <MdEmail className="bg-[#0F172A] p-1 rounded" />
               </Link>
             </div>
           </div>
         </div>
 
         {/* Description */}
-        <div>
-          <p className="max-w-110">
+        <div className="max-w-xl">
+          <p className="text-sm sm:text-base">
             <span className="underline font-[500]">Minimalizm</span> — men
             tanlagan yo'l. Bezak emas, foydalanuvchi uchun{" "}
             <span className="underline font-[500]">qulay ta'minot</span> ustun!
@@ -52,27 +62,22 @@ function Home() {
         </div>
 
         {/* Buttons */}
-        <div className="flex gap-5">
+        <div className="flex flex-wrap gap-3 mt-2 justify-center lg:justify-start">
           <Link
             to="/projects"
-            className="py-2 px-3 bg-[#0F172A] rounded flex items-center text-[14px] text-white"
+            className="py-2 px-3 bg-[#0F172A] rounded flex items-center text-[14px] sm:text-sm text-white"
           >
             Yechimlar
           </Link>
           <Link
             to="https://t.me/me_and_everyone"
             target="_blank"
-            className="py-2 px-3 border border-[#E2E8F0] rounded flex items-center text-[14px] text-[#0F172A] shadow"
+            className="py-2 px-3 border border-[#E2E8F0] rounded flex items-center text-[14px] sm:text-sm text-[#0F172A] shadow"
           >
             Haqimda
           </Link>
         </div>
       </div>
-      {/* right panel
-      <div className="relative overflow-hidden">
-        <img src="/bg.png" className="rounded-md" width={400} alt="my image" />
-        <img src="/me.png" className="absolute top-0 rounded-md" width={400} alt="my image2" />
-      </div> */}
     </div>
   );
 }
