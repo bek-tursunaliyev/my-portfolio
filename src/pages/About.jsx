@@ -15,29 +15,28 @@ function About() {
 
   return (
     <div className="w-full max-w-[570px] min-h-screen lg:mt-10 mt-25">
-      <h1 className="text-3xl font-semibold mb-4">Asadbek kim?</h1>
+      <h1 className="text-3xl font-semibold mb-4">Who is Asadbek?</h1>
 
       <p className="mb-2">
-        Ismim Asadbek, familyam Tursunaliyev, hozirda 16 yoshdaman.{" "}
-        <span className="underline font-[500]">Frontend</span> yo'nalishida 1+
-        yil tajribaga egaman. Shu kungacha 1 ta real loyihada qatnashdim!
+        My name is Asadbek, my surname is Tursunaliyev, and I am currently 16 years old.{" "}
+        <span className="underline font-[500]">Frontend</span> is my field, and I have 1+ years of
+        experience. So far, I have participated in 1 real project!
       </p>
 
-      <p className="mb-2">Sohamga doir mahoratlarim:</p>
+      <p className="mb-2">My skills related to my field:</p>
       <div className="flex flex-wrap gap-10 mb-4">
         <ul className="list-disc pl-5 font-semibold grid grid-cols-2">
-          <li>Ingliz tili</li>
-          <li>Matematika</li>
-          <li>Kreativlik</li>
-          <li>Super komunikator</li>
-          <li>Fast Typing</li>
-          <li>Sifatli UI/UX</li>
+          <li>English</li>
+          <li>Mathematics</li>
+          <li>Creativity</li>
+          <li>Strong communication</li>
+          <li>Fast typing</li>
+          <li>Quality UI/UX</li>
         </ul>
       </div>
 
       <p>
-        Tajribam davomida ushbu texnologiyalarni o'rgandim va loyihalarda
-        qo'lladim!
+        During my experience, I have learned these technologies and applied them in projects!
       </p>
 
       {/* Toggle button */}
@@ -45,7 +44,7 @@ function About() {
         onClick={() => setOpen(!open)}
         className="mb-4 flex items-center gap-2 text-black font-semibold"
       >
-        Texnologiyalar
+        Technologies
         <BsChevronDown
           className={`ml-1 transition-all duration-500 ${
             open ? "rotate-180" : "rotate-0"

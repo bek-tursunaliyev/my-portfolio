@@ -4,13 +4,13 @@ import { FiLink } from "react-icons/fi";
 
 const projects = [
   {
-    name: `"Grasby" tez kunda...`,
-    desc: "O'zbekistonadgi eng yirik online market.",
+    name: `"Grasby" coming soon...`,
+    desc: "The largest online market in Uzbekistan.",
     url: "#",
   },
   {
-    name: "Tez kunda...",
-    desc: "Tavsif...",
+    name: "Coming soon...",
+    desc: "Description...",
     url: "#",
   },
 ];
@@ -33,7 +33,7 @@ export default function MyProj() {
               className="inline-flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2 rounded bg-[#F1F5F9] hover:bg-[#F4F7FA] text-sm sm:text-base font-medium text-gray-800 shadow-sm transition"
             >
               <FiLink className="h-4 w-4" />
-              Ko'rish
+              View
             </Link>
           </div>
         ))}

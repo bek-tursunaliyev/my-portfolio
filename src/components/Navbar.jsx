@@ -18,7 +18,7 @@ function Navbar() {
           />
           <h1 className="text-[18px] font-semibold">
             asadbek{" "}
-            <span className="text-gray-700 font-[400]">ning portfoliosi</span>
+            <span className="text-gray-700 font-[400]">'s portfolio</span>
           </h1>
         </Link>
 
@@ -31,7 +31,7 @@ function Navbar() {
                 isActive ? "text-black font-semibold" : ""
               }
             >
-              men haqimda?
+              who is asadbek?
             </NavLink>
           </li>
           <li>
@@ -51,7 +51,7 @@ function Navbar() {
                 isActive ? "text-black font-semibold" : ""
               }
             >
-              loyihalar
+              works
             </NavLink>
           </li>
         </ul>

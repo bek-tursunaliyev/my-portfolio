@@ -27,26 +27,36 @@ function Home() {
               Tursunaliyev
             </h1>
             <h3 className="text-[18px] sm:text-[21px] text-[#64748B]">
-              Frontend dasturchi
+              Frontend developer
             </h3>
             <div className="flex flex-wrap gap-2 items-center mt-2 text-white text-[14px] justify-center lg:justify-start">
               <Link to="https://t.me/tursunaliyev_hd" target="_blank">
-                <RiTelegram2Fill className="bg-[#0F172A] p-1 rounded" />
+                <div className="p-1 bg-[#0F172A] rounded">
+                  <RiTelegram2Fill />
+                </div>
               </Link>
               <Link
                 to="https://www.linkedin.com/mypreferences/d/categories/account"
                 target="_blank"
               >
-                <FaLinkedinIn className="bg-[#0F172A] p-1 rounded" />
+                <div className="p-1 bg-[#0F172A] rounded">
+                  <FaLinkedinIn />
+                </div>
               </Link>
               <Link to="https://x.com" target="_blank">
-                <RiTwitterXFill className="bg-[#0F172A] p-1 rounded" />
+                <div className="p-1 bg-[#0F172A] rounded">
+                  <RiTwitterXFill />
+                </div>
               </Link>
               <Link to="https://github.com/bek-tursunaliyev" target="_blank">
-                <FaGithub className="bg-[#0F172A] p-1 rounded" />
+                <div className="p-1 bg-[#0F172A] rounded">
+                  <FaGithub />
+                </div>
               </Link>
               <Link to="https://gmail.com/" target="_blank">
-                <MdEmail className="bg-[#0F172A] p-1 rounded" />
+                <div className="p-1 bg-[#0F172A] rounded">
+                  <MdEmail />
+                </div>
               </Link>
             </div>
           </div>
@@ -55,27 +65,29 @@ function Home() {
         {/* Description */}
         <div className="max-w-xl">
           <p className="text-sm sm:text-base">
-            <span className="underline font-[500]">Minimalizm</span> — men
-            tanlagan yo'l. Bezak emas, foydalanuvchi uchun{" "}
-            <span className="underline font-[500]">qulay ta'minot</span> ustun!
+            <span className="underline font-[500]">Minimalism</span> — that’s
+            the path I’ve chosen. Not decoration, but{" "}
+            <span className="underline font-[500]">user comfort</span> matters
+            most!
           </p>
         </div>
 
         {/* Buttons */}
         <div className="flex flex-wrap gap-3 mt-2 justify-center lg:justify-start">
           <Link
-            to="/projects"
-            className="py-2 px-3 bg-[#0F172A] rounded flex items-center text-[14px] sm:text-sm text-white"
-          >
-            Yechimlar
-          </Link>
-          <Link
             to="https://t.me/me_and_everyone"
             target="_blank"
             className="py-2 px-3 border border-[#E2E8F0] rounded flex items-center text-[14px] sm:text-sm text-[#0F172A] shadow"
           >
-            Haqimda
+            About Me
           </Link>
+          <a
+            href="/cv.pdf"
+            download
+            className="py-2 px-5 bg-[#0F172A] rounded flex items-center text-[14px] sm:text-sm text-white"
+          >
+            CV
+          </a>
         </div>
       </div>
     </div>
