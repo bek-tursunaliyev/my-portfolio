@@ -3,14 +3,15 @@ import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { RiTelegram2Fill, RiTwitterXFill } from "react-icons/ri";
+import { motion } from "framer-motion";
 
 function Home() {
   return (
     <div
       className="
         flex flex-col lg:flex-row justify-between 
-        my-10 lg:my-28 items-center 
-        px-4 lg:px-10 gap-10 lg:gap-20 mt-30
+        my-30 lg:my-28 items-start
+        px-4 lg:px-10 gap-10 lg:gap-20
         text-center lg:text-left
       "
     >
@@ -35,15 +36,12 @@ function Home() {
                   <RiTelegram2Fill />
                 </div>
               </Link>
-              <Link
-                to="https://www.linkedin.com/mypreferences/d/categories/account"
-                target="_blank"
-              >
+              <Link to="www.linkedin.com/in/bek-tursunaliyev" target="_blank">
                 <div className="p-1 bg-[#0F172A] rounded">
                   <FaLinkedinIn />
                 </div>
               </Link>
-              <Link to="https://x.com" target="_blank">
+              <Link to="https://x.com/AsadbekTur56636" target="_blank">
                 <div className="p-1 bg-[#0F172A] rounded">
                   <RiTwitterXFill />
                 </div>
@@ -53,11 +51,15 @@ function Home() {
                   <FaGithub />
                 </div>
               </Link>
-              <Link to="https://gmail.com/" target="_blank">
+              <a
+                href="mailto:kelajakasadbek@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div className="p-1 bg-[#0F172A] rounded">
                   <MdEmail />
                 </div>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -88,6 +90,26 @@ function Home() {
           >
             CV
           </a>
+        </div>
+      </div>
+
+      {/* Right panel: Image with animation */}
+      {/* Right panel: Image with animation */}
+      <div className="w-full lg:w-1/2 flex justify-center">
+        <div className="relative flex items-center justify-center overflow-hidden rounded-full h-[500px] -mt-20 w-[500px]">
+          <div className="relative rounded-full w-64 sm:w-80 lg:w-[420px] h-64 sm:h-80 lg:h-[420px] overflow-hidden">
+            <div className="absolute h-100 w-100 bg-[#0F172A] rounded-full -bottom-2 left-1/2 -translate-x-1/2"></div>
+
+            {/* Animate only image */}
+            <motion.img
+              src="/rme.png"
+              alt="Asadbek"
+              initial={{ opacity: 0, y: 150 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              className="absolute top-0 left-1/2 rounded-full -translate-x-1/2 w-full max-w-[550px] object-cover object-top"
+            />
+          </div>
         </div>
       </div>
     </div>
