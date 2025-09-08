@@ -29,7 +29,7 @@ function About() {
         <p className="mb-2">My skills related to my field:</p>
         <ul className="list-disc pl-5 font-semibold grid grid-cols-2 gap-x-4 mb-4">
           <li>English</li>
-          <li>Mathematics</li>
+          <li>Mathematic</li>
           <li>Creativity</li>
           <li>Strong communication</li>
           <li>Fast typing</li>

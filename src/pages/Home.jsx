@@ -36,7 +36,7 @@ function Home() {
                   <RiTelegram2Fill />
                 </div>
               </Link>
-              <Link to="www.linkedin.com/in/bek-tursunaliyev" target="_blank">
+              <Link to="https://linkedin.com/in/bek-tursunaliyev" target="_blank">
                 <div className="p-1 bg-[#0F172A] rounded">
                   <FaLinkedinIn />
                 </div>
