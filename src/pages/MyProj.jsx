@@ -18,8 +18,8 @@ const projects = [
   {
     name: `"Grasby" coming soon...`,
     desc: "The largest online market in Uzbekistan.",
-    url: "#",
-    source: "#",
+    url: "/",
+    source: "/",
   },
 ];
 
