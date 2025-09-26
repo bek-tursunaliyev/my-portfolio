@@ -18,9 +18,9 @@ function Home() {
       {/* Left panel */}
       <div className="flex flex-col gap-5 items-center lg:items-start w-full lg:w-1/2">
         {/* Header section */}
-        <div className="flex flex-col items-center gap-4 w-full lg:flex-row lg:items-center">
-          <div className="border w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center rounded-full">
-            <img src="/logo.svg" className="w-12 sm:w-14" alt="header_photo" />
+        <div className="flex flex-col items-center gap-10 w-full lg:flex-row lg:items-center">
+          <div className="w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center rounded-full">
+            <img src="/plane.png" className="" alt="header_photo" />
           </div>
           <div className="flex flex-col gap-0.5 items-center lg:items-start">
             <h1 className="text-2xl sm:text-3xl text-gray-700">
