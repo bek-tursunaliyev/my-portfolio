@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { BsChevronDown } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 function About() {
   const [open, setOpen] = useState(false);
@@ -80,8 +81,8 @@ function About() {
       </div>
 
       {/* gallery */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-2xl">
-        {/* Image 1 */}
+      <div className="grid grid-cols-2 gap-5 max-w-2xl mx-auto">
+        {/* Row 1 */}
         <div className="relative aspect-square overflow-hidden rounded-2xl shadow group">
           <img src="/me.jpg" alt="me" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
@@ -91,7 +92,6 @@ function About() {
           </div>
         </div>
 
-        {/* Image 2 */}
         <div className="relative aspect-square overflow-hidden rounded-2xl shadow group">
           <img src="/me3.jpg" alt="me" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
@@ -99,8 +99,49 @@ function About() {
           </div>
         </div>
 
-        {/* Image 3 */}
-        <div className="relative aspect-video overflow-hidden rounded-2xl shadow group sm:col-span-2">
+        {/* Row 2 */}
+        <div className="relative aspect-square overflow-hidden rounded-2xl shadow group">
+          <img src="/sg.jpg" alt="me" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+            <p className="text-white text-sm">
+              <img src="/sng.png" width="20" alt="" />
+            </p>
+          </div>
+        </div>
+
+        <div className="relative row-span-2 aspect-[2/4.1] overflow-hidden rounded-2xl shadow group">
+          <img src="/fr.png" alt="me" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+            <p className="text-white text-sm flex gap-1">
+              <span>Brotherhood</span>
+              <img src="/sng.png" width="20" alt="" />
+            </p>
+          </div>
+        </div>
+
+        {/* Row 3 */}
+        <div className="relative aspect-square overflow-hidden rounded-2xl shadow group">
+          <video
+            src="/video.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+            <a
+              href="https://t.me/me_and_everyone/344"
+              target="_blank"
+              className="text-white text-sm"
+            >
+              Me on the pitch with bros (2023/24)
+            </a>
+          </div>
+        </div>
+
+        {/* Row 4 (full width) */}
+        <div className="relative aspect-video overflow-hidden rounded-2xl shadow group col-span-2">
           <img
             src="/me33.jpg"
             alt="me"
