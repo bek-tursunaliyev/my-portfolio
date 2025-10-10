@@ -9,11 +9,11 @@ function Home() {
   return (
     <div
       className="
-        flex flex-col lg:flex-row justify-between 
-        my-30 lg:my-28 items-start
-        px-4 lg:px-10 gap-10 lg:gap-20
-        text-center lg:text-left
-      "
+    flex flex-col lg:flex-row justify-between
+    my-28 lg:my-28 items-start mx-auto
+    px-4 lg:px-10 gap-10 lg:gap-20
+    text-center lg:text-left
+  "
     >
       {/* Left panel */}
       <div className="flex flex-col gap-5 items-center lg:items-start w-full lg:w-1/2">
@@ -36,7 +36,10 @@ function Home() {
                   <RiTelegram2Fill />
                 </div>
               </Link>
-              <Link to="https://linkedin.com/in/bek-tursunaliyev" target="_blank">
+              <Link
+                to="https://linkedin.com/in/bek-tursunaliyev"
+                target="_blank"
+              >
                 <div className="p-1 bg-[#0F172A] rounded">
                   <FaLinkedinIn />
                 </div>
@@ -94,8 +97,7 @@ function Home() {
       </div>
 
       {/* Right panel: Image with animation */}
-      {/* Right panel: Image with animation */}
-      <div className="w-full lg:w-1/2 flex justify-center">
+      <div className="w-full lg:w-1/2 flex justify-end">
         <div className="relative flex items-center justify-center overflow-hidden rounded-full h-[500px] -mt-20 w-[500px]">
           <div className="relative rounded-full w-64 sm:w-80 lg:w-[420px] h-64 sm:h-80 lg:h-[420px] overflow-hidden">
             <div className="absolute h-100 w-100 bg-[#0F172A] rounded-full -bottom-2 left-1/2 -translate-x-1/2"></div>
